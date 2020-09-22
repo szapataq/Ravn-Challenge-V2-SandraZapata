@@ -21,7 +21,7 @@
   padding: 14px 32px;
 }
 
-.containter-character-cell {
+.containter-characters {
   width: 21.875rem;
   -webkit-box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.15);
@@ -29,15 +29,42 @@
   overflow: auto;
 }
 
-.character-cell {
-  cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 16px 16px 16px 0px;
-  margin-left: 16px;
+.link-detail:link, .link-detail:active, .link-detail:visited {
+  text-decoration: none;
 }
 
-.character-cell h2 {
+.character-cell {
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.character-cell div {
+  padding: 16px 16px 16px 0px;
+  width: 90%;
+}
+
+.character-cell div h2 {
+  font-weight: bold;
   font-size: 17px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.character-cell div p {
+  font-size: 0.875rem;
+  color: #828282;
+}
+
+.character-cell img {
+  padding-right: 24px;
 }
 
 * {
