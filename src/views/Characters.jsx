@@ -1,7 +1,6 @@
 import React from 'react';
 import { useQuery} from '@apollo/client';
 import ALL_PEOPLE from '../graphql/query.js';
-import '../style/Characters.scss';
 import Loading from '../components/Loading';
 import Error from '../components/Error';
 
@@ -22,7 +21,7 @@ const Characters = () => {
                 characters.map(item => {
                   return(
                     <div key={item.id} className="character-cell">
-                      <p>{item.name}</p>
+                      <h2 className="Name-character">{item.name}</h2>
                       <p>from {item.homeworld}</p>
                     </div>
                   )                  
