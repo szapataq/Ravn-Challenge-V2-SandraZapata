@@ -1,9 +1,11 @@
 import React from 'react';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <div>
-      <h3>Voy a ganar el reto</h3>
+      <Navbar/>
     </div>
   );
 }
