@@ -1,10 +1,10 @@
 import React from 'react';
-import '../style/Navbar.scss';
+// import '../style/Navbar.scss';
 
 const Navbar = () => {
     return (
         <nav className="navigation">
-            <p>Ravn Star Wars Registry</p>
+            <h2>Ravn Star Wars Registry</h2>
         </nav>
     )
 }
