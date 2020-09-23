@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 
-const ALL_PEOPLE = gql`
+const GET_ALL_PEOPLE = gql`
 {
     allPeople{
       edges {
@@ -20,4 +20,26 @@ const ALL_PEOPLE = gql`
   }
 `;
 
-export default ALL_PEOPLE;
+const GET_PERSON = gql`
+query($id: ID)
+  {
+    person(id: $id) {
+      name
+      eyeColor
+      hairColor
+      skinColor
+      birthYear
+      vehicleConnection{
+          edges{
+              node{
+                  id
+                  name
+              }   
+          }
+      }
+    }
+  }
+`;
+
+
+export {GET_ALL_PEOPLE ,GET_PERSON};
