@@ -1,0 +1,38 @@
+@import "./variables";
+.containter-characters {
+  width: 21.875rem;
+  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.15);
+  height: calc(100vh - 3.25rem);
+  overflow: auto;
+}
+.link-detail:link,
+.link-detail:active,
+.link-detail:visited {
+  text-decoration: none;
+}
+
+.character-cell {
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 16px;
+  display: flex;
+  justify-content: space-between;
+  div {
+    padding: 16px 16px 16px 0px;
+    width: 90%;
+    h2 {
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 20px;
+      color: $Dark;
+    }
+    p {
+      font-size: 0.875rem;
+      color: $Light;
+    }
+  }
+  img {
+    padding-right: 24px;
+  }
+}
