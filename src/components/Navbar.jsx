@@ -1,13 +1,12 @@
-import React from 'react';
-// import '../style/Navbar.scss';
+import React from "react";
+import "../style/Navbar.scss";
 
 const Navbar = () => {
-    return (
-        <nav className="navigation">
-            <h2>Ravn Star Wars Registry</h2>
-        </nav>
-    )
-}
+  return (
+    <nav className="navigation">
+      <h2>Ravn Star Wars Registry</h2>
+    </nav>
+  );
+};
 
 export default Navbar;
-
