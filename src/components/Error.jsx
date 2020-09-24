@@ -1,8 +1,9 @@
 import React from "react";
+import "../style/Error.scss";
 
 const Error = () => {
   return (
-    <div>
+    <div className="message-error">
       <p>Failed to Load Data</p>
     </div>
   );
