@@ -14,13 +14,13 @@ function App() {
   return (
     <Router>
       <Header />
-      <div className="container-info">
-        <Characters />
-        <Switch>
+      <Switch>
+        <div className="container-info">
+          <Characters />
           <Route path="/characters/:id" exact component={DetailCharacter} />
           <Route render={() => <Redirect to="/" />} />
-        </Switch>
-      </div>
+        </div>
+      </Switch>
     </Router>
   );
 }
