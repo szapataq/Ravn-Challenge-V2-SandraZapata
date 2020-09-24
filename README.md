@@ -20,6 +20,13 @@ by: Sandra Maria Zapata Quentasi
    $ npm start
    ```
 
+### Technologies used
+
+- Graphql
+- Apollo client
+- React
+- Sass
+
 ### Views
 
 - Initial View
