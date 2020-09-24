@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Characters from "./components/Characters";
 import DetailCharacter from "./views/DetailCharacter";
-import Characters from "./views/Characters";
 import "./style/App.scss";
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Header />
       <div className="container-info">
         <Characters />
         <Switch>
