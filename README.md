@@ -4,6 +4,22 @@ by: Sandra Maria Zapata Quentasi
 
 ![logo raven](./src/assets/ScreenShot/logo-raven.jpg)
 
+### Get Started
+
+1. Clone the repository in any directory on your computer and enter the created folder
+   ```
+   $ git clone  https://github.com/szapataq/Ravn-Challenge-V2-Sandra_Zapata.git
+   $ cd Ravn-Challenge-V2-Sandra_Zapata
+   ```
+2. Install dependencies with:
+   ```
+   $ npm install
+   ```
+3. Run the project
+   ```
+   $ npm start
+   ```
+
 ### Views
 
 - Initial View
