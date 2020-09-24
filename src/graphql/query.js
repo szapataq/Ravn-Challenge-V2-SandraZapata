@@ -8,7 +8,6 @@ const GET_ALL_PEOPLE = gql`
         hasNextPage
       }
       edges {
-        cursor
         node {
           id
           name
