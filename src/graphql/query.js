@@ -1,14 +1,18 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 const GET_ALL_PEOPLE = gql`
-{
-    allPeople{
+  query($length: Int, $after: String) {
+    allPeople(first: $length, after: $after) {
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
       edges {
-        cursor    
+        cursor
         node {
           id
           name
-          species{
+          species {
             name
           }
           homeworld {
@@ -21,25 +25,22 @@ const GET_ALL_PEOPLE = gql`
 `;
 
 const GET_PERSON = gql`
-query($id: ID)
-  {
+  query($id: ID!) {
     person(id: $id) {
-      name
       eyeColor
       hairColor
       skinColor
       birthYear
-      vehicleConnection{
-          edges{
-              node{
-                  id
-                  name
-              }   
+      vehicleConnection {
+        edges {
+          node {
+            id
+            name
           }
+        }
       }
     }
   }
 `;
 
-
-export {GET_ALL_PEOPLE ,GET_PERSON};
+export { GET_ALL_PEOPLE, GET_PERSON };
